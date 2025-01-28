@@ -2,6 +2,8 @@ import axios from "axios";
 
 export const getTransactions = async (req, res) => {
 
+    console.log('Creando transaccion');
+
     const { token, paymentMethod, invoiceAmount, description, title, fiatCurrency } = req.body;
 
     // Validar los campos requeridos
