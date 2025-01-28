@@ -37,3 +37,8 @@ export const getTransactions = async (req, res) => {
         });
     }
 }
+
+export const getTransactionWebhook = async (req, res) => {
+    const { event, data } = req.body;
+    res.status(200).json({ message: 'Webhook received', event, data });
+};
