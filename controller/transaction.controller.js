@@ -40,5 +40,6 @@ export const getTransactions = async (req, res) => {
 
 export const getTransactionWebhook = async (req, res) => {
     const data = req.body;
+    console.log(data);
     res.status(200).json({ message: data});
 };
